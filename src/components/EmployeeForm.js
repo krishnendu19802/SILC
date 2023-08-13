@@ -10,36 +10,36 @@ const EmployeeForm = ({login}) => {
   const createEmployee = async (data) => {
     navigate("/mainpage")
  
-    const savedUserResponse = await fetch(
-      `${process.env.REACT_APP_BASE_URL}/createUser`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ ...data }),
-      }
-    );
+    // const savedUserResponse = await fetch(
+    //   `${process.env.REACT_APP_BASE_URL}/createUser`,
+    //   {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify({ ...data }),
+    //   }
+    // );
 
-    console.log("FORM RESPONSE......", savedUserResponse);
+    // console.log("FORM RESPONSE......", savedUserResponse);
 
   };
   const LoginEmployee = async (data) => {
     navigate("/mainpage")
 
-    console.log("clicked")
-    const savedUserResponse = await fetch(
-      `${process.env.REACT_APP_BASE_URL}/LoginUser`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ ...data }),
-      }
-    );
+    // console.log("clicked")
+    // const savedUserResponse = await fetch(
+    //   `${process.env.REACT_APP_BASE_URL}/LoginUser`,
+    //   {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify({ ...data }),
+    //   }
+    // );
 
-    console.log("FORM RESPONSE......", savedUserResponse);
+    // console.log("FORM RESPONSE......", savedUserResponse);
 
     navigate("/")
   };
