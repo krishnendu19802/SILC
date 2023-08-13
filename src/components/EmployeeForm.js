@@ -8,7 +8,8 @@ const EmployeeForm = ({login}) => {
   const navigate = useNavigate();
 
   const createEmployee = async (data) => {
-
+    navigate("/mainpage")
+ 
     const savedUserResponse = await fetch(
       `${process.env.REACT_APP_BASE_URL}/createUser`,
       {
@@ -22,10 +23,11 @@ const EmployeeForm = ({login}) => {
 
     console.log("FORM RESPONSE......", savedUserResponse);
 
-    navigate("/")
   };
   const LoginEmployee = async (data) => {
+    navigate("/mainpage")
 
+    console.log("clicked")
     const savedUserResponse = await fetch(
       `${process.env.REACT_APP_BASE_URL}/LoginUser`,
       {
@@ -106,7 +108,7 @@ const EmployeeForm = ({login}) => {
               className="text-base font-medium text-gray-900 dark:text-gray-200"
             >
               {" "}
-              Employee Department{" "}
+              Employee College{" "}
             </label>
             <div className="mt-2.5">
               <input

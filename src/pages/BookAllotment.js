@@ -55,7 +55,7 @@ export default function BookAllotment() {
           <div className="rounded-top bg-dark px-3 py-3 fs-4 text-center" >Allotment form</div>
           <div className="allotment form bg-secondary px-3 py-3">
             <div className="d-flex">
-              <input className='px-2 py-2 rounded text-dark mx-2' type="text" placeholder="Enter book id" onChange={bookid} name="book_id" />
+              <input className='px-2 py-2 rounded text-dark mx-2' type="text" placeholder="Enter book id" onChange={bookid} name="book_id" style={{width:"30%"}} />
               <button className=' mx-2 btn btn-success rounded-end' onClick={searchid}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
@@ -64,7 +64,7 @@ export default function BookAllotment() {
               <div className={`text-warning ms-auto me-5 d-flex align-items-center fs-4 text-${col(0)}`}>{bookdetails.name}</div>
             </div>
             <div className="d-flex my-5 ms-1">
-              <input className='px-2 py-2 rounded text-dark' type="text" placeholder="Enter registration number" onChange={bookid} name="reg_no" />
+              <input className='px-2 py-2 rounded text-dark' type="text" placeholder="Enter registration number" onChange={bookid} name="reg_no"  style={{width:"30%"}} />
               <div className={`text-warning ms-auto me-5 d-flex align-items-center fs-4 text-${col(1)}`}>{bookdetails.available}</div>
             </div>
             <hr />
