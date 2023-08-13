@@ -54,7 +54,7 @@ export default function NewHomePage() {
                     <div className='fixed-bottom my-5 mx-5 text-light d-flex' >
                         <div>Get Started {"-->"}</div>
                         <button className="btn btn-success ms-auto" onClick={handleclick}>Sign Up</button>
-                        <button className="btn btn-success" onClick={() => { navigate("/mainpage") }}>Main Page</button>
+                        {/* <button className="btn btn-success" onClick={() => { navigate("/mainpage") }}>Main Page</button> */}
                     </div></div>
                 {/* </div> */}
 
